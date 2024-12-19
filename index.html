@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmaxx</title><script
+    src="https://kit.fontawesome.com/7687ab0d62.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <section id="landing-page">
+        <nav>
+          <figure>
+            <img id="personal-logo" src="./asset.logo/logo.png" />
+          </figure>
+          <ul class="nav__link--list">
+            <li class="nav__link">
+              <a
+                href="#"
+                class="nav__link--anchor link__hover--effect link__hover--effect--black"
+                ><i class="fa-solid fa-film"></i
+              ></a>
+            </li>
+            <li class="nav__link">
+              <a
+                href="#"
+                class="nav__link--anchor link__hover--effect link__hover--effect--black"
+                >Home</a
+              >
+            </li>
+            <li class="nav__link">
+              <a
+                href="#"
+                class="nav__link--anchor link__hover--effect link__hover--effect--black"
+                >Find Movies</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="search">
+            <div class="search__container">
+              <div class="search__row">
+                <h1 class="search__title">
+                  Explore movies
+                </h1>
+                <div class="input__wrapper">
+                  <input id="searchInput"
+                    type="text"
+                    placeholder="Search by Title, Genre, or Release Year "
+                  />
+                  <button id="search__btn" class="btn" onclick="main()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <main id="movie__main">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="movie__header">
+                <h2 class="section__title movie__header--title">
+                  All <span class="orange">Movies</span>
+                </h2>
+                <select id="filter" onchange="filterMovies(event)">
+                  <option value="" disabled selected>Sort</option>
+                  <option value="A_TO_Z">Title, A to Z</option>
+                  <option value="Z_TO_A">Title, Z to A</option>
+                  <option value="RATING">Rating</option>
+                </select>
+              </div>
+              <div class="movie movie__loading">
+                  <i class="fas fa-spinner books__loading--spinner"></i>
+              </div>
+              <div id="all_movies">
+                
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <script src="./index.js"></script>
+</body>
+</html>
