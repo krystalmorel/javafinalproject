@@ -192,12 +192,6 @@ input {
 }
 
 /* MOVIE PAGE */
-
-#movie__body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
   
   #movie__main {
     flex: 1;
@@ -256,3 +250,43 @@ input {
         transform: rotate(360deg);
     }
   }
+
+  .movie-list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .movie {
+    width: 30%;
+  }
+
+  .movie-card {
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 #6c63ff;
+    margin: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #ff5757;
+  }
+  
+  .movie-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .movie-card__container {
+    padding: 2px 16px;
+  }
+
+  .movie__img--wrapper {
+    height: 50%;
+  }
+
+  .movie__title {
+    text-align: center;
+    font-size: 25px;
+    color:#ff5757 ;
+  }
+
+

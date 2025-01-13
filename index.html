@@ -49,7 +49,7 @@
                 <div class="input__wrapper">
                   <input id="searchInput"
                     type="text"
-                    placeholder="Search by Title, Genre, or Release Year "
+                    placeholder="Search by Title" onchange="onSearchChange(event)"
                   />
                   <button id="search__btn" class="btn" onclick="main()">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -71,17 +71,14 @@
                   <option value="" disabled selected>Sort</option>
                   <option value="A_TO_Z">Title, A to Z</option>
                   <option value="Z_TO_A">Title, Z to A</option>
-                  <option value="RATING">Rating</option>
+                  <option value="YEAR">Release Year</option>
                 </select>
               </div>
-              <div class="movie movie__loading">
-                  <i class="fas fa-spinner books__loading--spinner"></i>
-              </div>
-              <div id="all_movies">
-                
-              </div>
+              
             </div>
           </div>
+        </div>
+        <div class="all_movies">
         </section>
       </main>
       <script src="./index.js"></script>
